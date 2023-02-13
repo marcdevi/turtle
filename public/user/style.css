@@ -1,0 +1,187 @@
+@import url("https://use.typekit.net/zjg7yvb.css");
+@import url("https://use.typekit.net/zjg7yvb.css");
+
+body {
+    font-family: "sofia-pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #FFFFFF;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1 {
+    font-family: "brevia", sans-serif;
+    font-size: 28px;
+}
+
+h2 {
+    font-family: "brevia", sans-serif;
+    font-size: 16px;
+}
+
+main {
+    padding: 0 5%;
+}
+
+footer {
+    position: fixed;
+    bottom: 5%;
+    width: 90%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0% 5%;
+    border: solid black 1px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    z-index: 10;
+
+}
+
+.cardcenter {
+    position: absolute;
+    background-color: black;
+    padding: 3%;
+    top: -60%;
+    /* right: -50%; */
+    /* left: -50%; */
+    display: flex;
+    align-items: center;
+    border-radius: 100%;
+    border: 11px solid #FFFFFF;
+}
+
+.cardtab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardtab>p {
+    margin: 0px;
+}
+
+.search {
+    display: flex;
+}
+
+.search>input {
+    height: 44px;
+    border-radius: 5px 0px 0px 5px;
+    width: 90%;
+}
+
+h2 {
+    font-size: 24px;
+    font-family: "sofia-pro", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.card-vocaux{
+    display: flex;
+    gap: 5%;
+    height: 100%;
+    overflow-x: scroll;
+}
+
+.card-vocaux>div{
+    padding: 5% 2%;
+    border: solid 0.6px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+a{
+    color: unset;
+    text-decoration: unset;
+}
+
+.section-urgence{
+    margin-top: 20%;
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-urgence>div{
+    border: solid 1px;
+}
+
+.card-safeplace{
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px;
+    border-radius: 8px;
+    align-items: center;
+    padding: 2% 3%;
+    margin-bottom: 5%;
+}
+
+.card-safeplace-img{
+    width: 40%;
+}
+
+.card-safeplace-info{
+    width: 55%;
+}
+
+.infos-card{
+    background-color: #00BD9D;
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: space-around;
+    height: 19px;
+    border-radius: 2px;
+}
+
+button {
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    width: fit-content;
+    padding: 16px 20px;
+    background: #8980F5;
+    border-radius: 5px;
+    color: #f9f9f9;
+    border: 0;
+    font-size: 20px;
+    width: 100%;
+
+}
+
+.disc-card{
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px;
+    padding: 2% 5%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+
+.disc-card-infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.disc-card-infos>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.disc-card-infos-add{
+    background-color: #8980F5;
+    width: 30%;
+    border-radius: 0px 10px 10px 0px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
