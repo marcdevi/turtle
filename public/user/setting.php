@@ -1,6 +1,16 @@
 <?php
 session_start();
 
+require '../../vendor/autoload.php';
+
+use App\Database;
+
+$db = new Database('turtle');
+
+require '../../app/models/function.php';
+require '../../app/controllers/SettingController.php';
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,8 +41,27 @@ session_start();
                 </div>
             </a>
         </div>
+        <h1>Mélanie Chapon</h1>
+        <section class="form">
+            <?php foreach ($userinfos as $user) { ?>
+                <label for="nom">Nom</label>
+                <input type="text" name="nom" value="<?= $user['nom'] ?>">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" value="<?= $user['email'] ?>">
+                <label for="numero">Numéro</label>
+                <input type="number" name="numero" value="<?= $user['numero'] ?>">
+                <h2>Mes contacts d’urgence</h2>
+                <label for="nomC">Nom</label>
+                <input type="text" name="nomC" value="<?= $user['nomC'] ?>">
+                <label for="numeroC">Numéro</label>
+                <input type="number" name="numeroC" value="<?= $user['numeroC'] ?>">
+                <button style="height: auto;font-size: 14px;">Ajouter un autre contact</button>
+                
+            <?php }  ?>
+        </section>
+        <a href="deconnexion.php" style="color: #ED4E4E;text-decoration: underline;">Déconnexion</a>
 
-        
+
 
     </main>
 

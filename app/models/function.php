@@ -5,6 +5,10 @@ function adduser($db, $data) {
     return $stmt->execute($data);
 }
 
+function sendMsg($db, $datas) {
+    $stmt = $db->getPDO()->prepare('INSERT INTO discussion (ville, id_user, message) VALUES (:ville, :id_user, :message)');
+    return $stmt->execute($datas);
+}
 
 
 function verifiAdmin($db, $data){
@@ -38,6 +42,23 @@ function showDisc($db){
     $data = $query->fetchAll(PDO::FETCH_ASSOC);
     return $data;
 }
+
+function showUser($db, $data){
+    $sql = 'SELECT * FROM user WHERE id = :id';
+    $query = $db->getPDO()->prepare($sql);
+    $query->execute($data);
+    $data = $query->fetchAll(PDO::FETCH_ASSOC);
+    return $data;
+}
+
+function getMsgByVille($db, $data){
+    $sql = 'SELECT * FROM discussion WHERE ville = :ville';
+    $query = $db->getPDO()->prepare($sql);
+    $query->execute($data);
+    $data = $query->fetchAll(PDO::FETCH_ASSOC);
+    return $data;
+}
+
 
 function isConnected(){
     if(isset($_SESSION['useradmin']) && $_SESSION['useradmin'] == true || isset($_SESSION['userid'])){

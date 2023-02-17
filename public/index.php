@@ -26,7 +26,7 @@ require '../app/controllers/AjoutController.php';
     <header></header>
     <main>
         <h1>Bienvenue sur Turtle</h1>
-        <form action="" class="form" method="get">
+        <form action="" class="form" method="get" style="margin: 0 0 20px;gap: 5px;">
             <label for="nom">Nom</label>
             <input type="text" name="nom">
             <label for="email">E-mail</label>
@@ -38,12 +38,13 @@ require '../app/controllers/AjoutController.php';
             <input type="text" name="nomC">
             <label for="numeroC">Numéro</label>
             <input type="number" name="numeroC">
-            <div style="display: flex;justify-content:space-between;margin-top: 5%;">
-                <button>Ajouter un autre contacte</button>
+            <div style="display: flex;justify-content:space-between;margin-top: 5%;gap: 9px;flex-direction: column;">
+                <button style="color: #8980F5;background-color: #FFFFFF;border: solid 1px;">Ajouter un autre contacte</button>
                 <button type="submit">Suivant</button>
             </div>
 
         </form>
+        <a href="connexion.php" style="color: black;text-decoration: underline;">Connexion</a>
     </main>
     <footer>
 

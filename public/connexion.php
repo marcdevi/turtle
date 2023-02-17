@@ -34,11 +34,14 @@ require '../app/controllers/ConnexionController.php';
                 </div>
             <?php } ?>
             <form action="" method="post" class="form">
+                <label for="email">E-mail</label>
                 <input type="email" name="email" placeholder="Email">
+                <label for="password">Mot de passe</label>
                 <input type="password" name="password" placeholder="Mots de passe">
-                <button type="submit">Se connecter</button>
+                <button style="margin-top: 5%;" type="submit">Se connecter</button>
             </form>
         </div>
+        <a href="index.php" style="color: black;text-decoration: underline;">Inscription</a>
     </main>
     <footer></footer>
 </body>

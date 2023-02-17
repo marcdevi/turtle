@@ -56,7 +56,7 @@ session_start();
         <div style="display: flex;width: 100%;justify-content: space-around;align-items: center;gap:15%">
             <div style="display: flex;width: 50%;justify-content: space-evenly;align-items:center">
                 <div class="cardtab">
-                    <a href="discussion.php"><div><img src="../img/chat.png" alt=""></div></a>
+                    <a href="discussion.php"><div><img src="../img/chat2.png" alt=""></div></a>
                 </div>
                 <div class="cardtab">
                     <a href="safeplace.php"><div><img src="../img/map.png" alt=""></div></a>
@@ -64,10 +64,10 @@ session_start();
             </div>
             <div style="display: flex;width: 50%;justify-content: space-evenly;">
                 <div class="cardtab">
-                    <a href=""><div><img src="../img/headphones.png" alt=""></div></a>
+                    <a href="index.php"><div><img src="../img/headphones.png" alt=""></div></a>
                 </div>
                 <div class="cardtab">
-                    <a href=""><div><img src="../img/heart.png" alt=""></div></a>
+                    <a href="favorie.php"><div><img src="../img/heart.png" alt=""></div></a>
                 </div>
             </div>
         </div>

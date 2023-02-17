@@ -18,7 +18,7 @@ session_start();
     <header></header>
     <main>
         <div style="display: flex;justify-content:space-between;align-items: center;">
-            <h1>Vocaux</h1>
+            <h1>Favoris</h1>
             <a href="setting.php" style="width: 10%;">
                 <div>
                     <img src="../img/settings.png" alt="" width="100%">
@@ -35,7 +35,7 @@ session_start();
             <p style="width: fit-content;margin: 0px;">Filtres</p>
         </div>
         <section>
-            <h2>Lieux</h2>
+            <h2>Récemment utilisé </h2>
             <div class="card-vocaux">
                 <a href="">
                     <div>
@@ -72,29 +72,9 @@ session_start();
         <section>
             <h2>Famille</h2>
             <div class="card-vocaux">
-                <a href="player.php">
-                    <div>
-                        <p style="text-align: center;width: max-content;">Tu es dans un taxi</p>
-                    </div>
-                </a>
-                <a href="">
-                    <div>
-                        <p style="text-align: center;width: max-content;">Tu es dans la rue</p>
-                    </div>
-                </a>
-                <a href="">
-                    <div>
-                        <p style="text-align: center;width: max-content;">Tu es dans la rue</p>
-                    </div>
-                </a>
                 <a href="">
                     <div>
                         <p style="text-align: center;width: max-content;">Tu es dans un taxi</p>
-                    </div>
-                </a>
-                <a href="">
-                    <div>
-                        <p style="text-align: center;width: max-content;">Tu es dans la rue</p>
                     </div>
                 </a>
                 <a href="">
@@ -110,31 +90,6 @@ session_start();
                 <a href="">
                     <div>
                         <p style="text-align: center;width: max-content;">Tu es dans un taxi</p>
-                    </div>
-                </a>
-                <a href="">
-                    <div>
-                        <p style="text-align: center;width: max-content;">Tu es dans la rue</p>
-                    </div>
-                </a>
-                <a href="">
-                    <div>
-                        <p style="text-align: center;width: max-content;">Tu es dans la rue</p>
-                    </div>
-                </a>
-                <a href="">
-                    <div>
-                        <p style="text-align: center;width: max-content;">Tu es dans un taxi</p>
-                    </div>
-                </a>
-                <a href="">
-                    <div>
-                        <p style="text-align: center;width: max-content;">Tu es dans la rue</p>
-                    </div>
-                </a>
-                <a href="">
-                    <div>
-                        <p style="text-align: center;width: max-content;">Tu es dans la rue</p>
                     </div>
                 </a>
             </div>
@@ -161,12 +116,12 @@ session_start();
             <div style="display: flex;width: 50%;justify-content: space-evenly;">
                 <div class="cardtab">
                     <a href="index.php">
-                        <div><img src="../img/headphones2.png" alt=""></div>
+                        <div><img src="../img/headphones.png" alt=""></div>
                     </a>
                 </div>
                 <div class="cardtab">
                     <a href="favorie.php">
-                        <div><img src="../img/heart.png" alt=""></div>
+                        <div><img src="../img/heart2.png" alt=""></div>
                     </a>
                 </div>
             </div>
